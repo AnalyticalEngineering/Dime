@@ -14,6 +14,9 @@
 		1225923E2B34BD7E0059B785 /* DimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1225923D2B34BD7E0059B785 /* DimeTests.swift */; };
 		122592482B34BD7E0059B785 /* DimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122592472B34BD7E0059B785 /* DimeUITests.swift */; };
 		1225924A2B34BD7E0059B785 /* DimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122592492B34BD7E0059B785 /* DimeUITestsLaunchTests.swift */; };
+		1225925A2B34BFBC0059B785 /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122592592B34BFBC0059B785 /* IntroScreen.swift */; };
+		1225925D2B34C35E0059B785 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1225925C2B34C35E0059B785 /* Constant.swift */; };
+		122592622B34CDE60059B785 /* TAB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122592612B34CDE60059B785 /* TAB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		122592432B34BD7E0059B785 /* DimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		122592472B34BD7E0059B785 /* DimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimeUITests.swift; sourceTree = "<group>"; };
 		122592492B34BD7E0059B785 /* DimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		122592592B34BFBC0059B785 /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
+		1225925C2B34C35E0059B785 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		122592612B34CDE60059B785 /* TAB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,11 @@
 		1225922A2B34BD7D0059B785 /* Dime */ = {
 			isa = PBXGroup;
 			children = (
-				1225922B2B34BD7D0059B785 /* DimeApp.swift */,
-				1225922D2B34BD7D0059B785 /* ContentView.swift */,
+				1225925E2B34CD7F0059B785 /* TAB PACKAGE */,
+				1225925B2B34C3330059B785 /* HELPERS */,
+				122592582B34BF9C0059B785 /* MODELS */,
+				122592572B34BF590059B785 /* APP */,
+				122592562B34BF3B0059B785 /* VIEWS */,
 				1225922F2B34BD7E0059B785 /* Assets.xcassets */,
 				122592312B34BD7E0059B785 /* Dime.entitlements */,
 				122592322B34BD7E0059B785 /* Preview Content */,
@@ -127,6 +136,62 @@
 				122592492B34BD7E0059B785 /* DimeUITestsLaunchTests.swift */,
 			);
 			path = DimeUITests;
+			sourceTree = "<group>";
+		};
+		122592562B34BF3B0059B785 /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				1225922D2B34BD7D0059B785 /* ContentView.swift */,
+				122592592B34BFBC0059B785 /* IntroScreen.swift */,
+			);
+			path = VIEWS;
+			sourceTree = "<group>";
+		};
+		122592572B34BF590059B785 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				1225922B2B34BD7D0059B785 /* DimeApp.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		122592582B34BF9C0059B785 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				122592612B34CDE60059B785 /* TAB.swift */,
+			);
+			path = MODELS;
+			sourceTree = "<group>";
+		};
+		1225925B2B34C3330059B785 /* HELPERS */ = {
+			isa = PBXGroup;
+			children = (
+				1225925C2B34C35E0059B785 /* Constant.swift */,
+			);
+			path = HELPERS;
+			sourceTree = "<group>";
+		};
+		1225925E2B34CD7F0059B785 /* TAB PACKAGE */ = {
+			isa = PBXGroup;
+			children = (
+				122592602B34CDA30059B785 /* VIEW */,
+				1225925F2B34CD9A0059B785 /* MODELS */,
+			);
+			path = "TAB PACKAGE";
+			sourceTree = "<group>";
+		};
+		1225925F2B34CD9A0059B785 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MODELS;
+			sourceTree = "<group>";
+		};
+		122592602B34CDA30059B785 /* VIEW */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIEW;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1225922E2B34BD7D0059B785 /* ContentView.swift in Sources */,
+				1225925A2B34BFBC0059B785 /* IntroScreen.swift in Sources */,
 				1225922C2B34BD7D0059B785 /* DimeApp.swift in Sources */,
+				122592622B34CDE60059B785 /* TAB.swift in Sources */,
+				1225925D2B34C35E0059B785 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
